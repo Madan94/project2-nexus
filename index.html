@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register & Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-container">
+    <nav class="navbar">
+      <div class="nav-head">
+          <a href="#" class="logo">The Mess</a>
+      </div>
+      <div class="nav-list">
+          <ul class="nav-items">
+              <li class="nav-links"><a href="#" class="links">Home</a></li>
+              <li class="nav-links"><a href="#" class="links">About us</a></li>
+              <li class="nav-links"><a href="#" class="links">Services</a></li>
+              <li class="nav-links"><a href="#" class="links">Contact</a></li>
+          </ul>
+      </div>
+      <div class="ctn-btn">
+          <a href="https://google.com" target="_blank"><button class="main-btn">Contact us</button></a>
+      </div>
+  </nav>
+    <div class="rowcontainer">
+      <div class="box1">
+        <h1 class="heading">Enjoy Your<br><span style="color:#ff7200;">Delicious Meal</span></h1>
+        <p class="paragraph"> Explore our delectable menu and elevate your dining experience from the comfort of your own home. Whether you're craving a hearty meal or a delightful dessert, we've got you covered. Place your order now and treat yourself to a memorable culinary journey!"</p>
+        <a href="#" class="btn">Book A Table</a>
+        <a href="#" class="btn">Order Now</a>
+        <p class="paragraph">* Signup/Login to Order food or Reserve Table</p>
+      </div>
+      <div class="container" id="signup" style="display:none;">
+        <h1 class="form-title">Register</h1>
+        <form method="post" action="">
+          <div id="signUpMessage" class="messageDiv" style="display:none;"></div>
+          <div class="input-group">
+             <i class="fas fa-user"></i>
+             <input type="text"  id="fName" placeholder="First Name" required>
+             <label for="fname"></label>
+          </div>
+          <div class="input-group">
+              <i class="fas fa-user"></i>
+              <input type="text"  id="lName" placeholder="Last Name" required>
+              <label for="lName"></label>
+          </div>
+          <div class="input-group">
+              <i class="fas fa-envelope"></i>
+              <input type="email"  id="rEmail" placeholder="Email" required>
+              <label for="rEmail"></label>
+          </div>
+          <div class="input-group">
+              <i class="fas fa-lock"></i>
+              <input type="password" id="rPassword"  placeholder="Password" required>
+              <label for="rPassword"></label>
+          </div>
+         <button class="btn" id="submitSignUp" >Sign Up</button>
+        </form>
+        <p class="or">
+           Or
+        </p>
+        <div class="icons">
+          <i class="fab fa-google"></i>
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-linkedin"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter"></i>
+        </div>
+        <div class="links">
+          <p id="msg-text">Already Have Account ?</p>
+          <button id="signInButton">Sign In</button>
+        </div>
+      </div>
+    <div class="container" id="signIn">
+          <h1 class="form-title">Sign In</h1>
+          <form method="post" action="">
+            <div id="signInMessage" class="messageDiv" style="display:none;"></div>
+            <div class="input-group">
+                <i class="fas fa-envelope"></i>
+                <input type="email"  id="email" placeholder="Email" required>
+                <label for="email"></label>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-lock"></i>
+              <input type="password" id="password"  placeholder="Password" required>
+                <label for="password"></label>
+            </div>
+            <p class="recover">
+              <a href="#">Recover Password</a>
+            </p>
+           <button  class="btn"  id="submitSignIn">Sign In</button>
+          </form>
+          <p class="or">
+            Or
+          </p>
+          <div class="icons">
+            <i class="fab fa-google"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+          </div>
+          <div class="links">
+            <p id="msg-text">Don't have account yet?</p>
+            <button id="signUpButton">Sign Up</button>
+          </div>
+        </div>
+    </div>
+  </div>
+  
+    
+      <script src="script.js"></script>
+      <script type="module" src="firebaseauth.js"></script>
+      <script src="homepage.js"></script>
+</body>
+</html>
